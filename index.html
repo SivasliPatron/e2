@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elat Handels GmbH - Website in Überarbeitung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #e8e8e8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 40px;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        }
+
+        /* Logo */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-img {
+            max-width: 220px;
+            height: auto;
+        }
+
+        /* Icon */
+        .icon {
+            width: 64px;
+            height: 64px;
+            background: #fff5eb;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+        }
+
+        /* Status Badge */
+        .status-badge {
+            display: inline-block;
+            background: #fff5eb;
+            color: #d35400;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        /* Description */
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 28px;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.75rem;
+        }
+
+        .progress-label {
+            color: #888;
+        }
+
+        .progress-value {
+            color: #d35400;
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e5e5e5;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar-inner {
+            width: 75%;
+            height: 100%;
+            background: #d35400;
+            border-radius: 3px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: #eee;
+            margin: 22px 0;
+        }
+
+        /* Contact Section */
+        .contact-title {
+            font-size: 0.65rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            color: #444;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            background: #fff5eb;
+            border-color: #d35400;
+            color: #d35400;
+        }
+
+        .contact-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 28px;
+            color: #bbb;
+            font-size: 0.65rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 35px 25px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Elat Logo EN YENI.png" alt="Elat Handels GmbH" class="logo-img">
+        </div>
+
+        <div class="icon">🔧</div>
+
+        <span class="status-badge">Wartungsarbeiten</span>
+
+        <h1>Wir arbeiten an unserer Website</h1>
+
+        <p class="description">
+            Unsere Website wird gerade überarbeitet und verbessert. 
+            Wir sind bald mit einem neuen Auftritt wieder für Sie da!
+        </p>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-label">Fortschritt</span>
+                <span class="progress-value">75%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar-inner"></div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-title">Bei dringenden Anfragen</div>
+        <div class="contact-methods">
+            <a href="mailto:info@elathandels.de" class="contact-btn">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                info@elathandels.de
+            </a>
+            <a href="tel:+49230691293800" class="contact-btn">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                +49 (0) 2306 91 29 380
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2025 Elat Handels GmbH. Alle Rechte vorbehalten.
+        </div>
+    </div>
+</body>
+</html>
